@@ -1,0 +1,17 @@
+"use client";
+import Link from "next/link";
+import { Check, PackageCheck, Truck } from "lucide-react";
+import { formatINR } from "@/lib/enquiry";
+import { ORDER_LABELS, ORDER_STEPS, orderProgress } from "@/lib/order-progress";
+
+export function OrderTrackingCard({ order }: { order: any }) {
+  const stage = orderProgress(order.status);
+  const payments = order.payments || [];
+  return <article className="tracking-order-card" data-status={order.status}>
+    <header><div><small>ORDER NUMBER</small><h3>{order.number}</h3><p>Placed {new Date(order.createdAt).toLocaleString("en-IN")}</p></div><span className={"tracking-status " + (order.status === "CANCELLED" ? "is-cancelled" : "")}>{ORDER_LABELS[order.status] || order.status}</span></header>
+    {order.status === "CANCELLED" ? <p className="tracking-cancelled">This order was cancelled. Check payment information below for its refund status.</p> : <ol className="order-progress" aria-label="Order progress">{ORDER_STEPS.map((step, index) => <li key={step} className={index <= stage ? "is-complete" : ""} aria-current={index === stage ? "step" : undefined}><i>{index <= stage ? <Check size={15} /> : index + 1}</i><span>{ORDER_LABELS[step]}</span>{index === stage && <small>Current status</small>}</li>)}</ol>}
+    <div className="tracking-order-body"><section><h4><PackageCheck size={16} /> Your products</h4><ul className="tracking-order-items">{order.items.map((item: any, index: number) => <li key={index}><div><strong>{item.name}</strong><small>{typeof item.variant?.name === "string" ? item.variant.name + " · " : ""}{item.sku} · Quantity {item.quantity}</small></div><b>{formatINR(item.total)}</b></li>)}</ul></section><section className="tracking-payment-details"><h4>Payment & total</h4>{payments.map((payment: any, index: number) => <p key={index}><span>{payment.method === "COD" ? "Cash on delivery" : payment.method === "RAZORPAY" ? "Online payment" : payment.method}</span><strong>{payment.status === "PENDING" && payment.method === "COD" ? "Pay on delivery" : payment.status}</strong></p>)}{[ ["Items subtotal", order.subtotal], ["GST", order.gst], ["Shipping", order.shipping], ["Discount", order.discount] ].filter(([,value]) => value !== undefined && value !== null).map(([label,value]) => <p key={label}><span>{label}</span><strong>{formatINR(value)}</strong></p>)}<p className="tracking-grand-total"><span>Total</span><strong>{formatINR(order.total)}</strong></p></section></div>
+    <div className="tracking-delivery-details"><section><h4><Truck size={16} /> Delivery details</h4>{order.deliveryAddress ? <p>{[order.deliveryAddress.line1,order.deliveryAddress.line2,order.deliveryAddress.city,order.deliveryAddress.state,order.deliveryAddress.pinCode].filter(Boolean).join(", ")}</p> : <p>Contact our team for delivery details.</p>}{order.customer && <p>{order.customer.name} · {order.customer.phone}</p>}</section><section><h4>Shipment updates</h4>{order.shipments?.length ? order.shipments.map((shipment: any,index: number) => <div key={index}><p>{shipment.carrier} · {shipment.trackingNumber}</p>{shipment.shippedAt && <p>Shipped {new Date(shipment.shippedAt).toLocaleString("en-IN")}</p>}{shipment.deliveredAt && <p>Delivered {new Date(shipment.deliveredAt).toLocaleString("en-IN")}</p>}</div>) : <p>Shipment details will appear when your order is dispatched.</p>}</section></div>
+    <footer><span>Order and payment statuses are updated separately.</span><Link href="/contact">Need help with this order?</Link></footer>
+  </article>;
+}

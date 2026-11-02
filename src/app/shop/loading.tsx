@@ -1,0 +1,1 @@
+export default function Loading(){return <main id="main" className="wrap loading-page" aria-busy="true"><div className="skeleton skeleton-title"/><div className="loading-grid">{[1,2,3,4].map(i=><div className="skeleton skeleton-card" key={i}/>)}</div><p role="status">Loading SRV products…</p></main>}

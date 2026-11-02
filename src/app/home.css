@@ -1,0 +1,74 @@
+/* Home collection: layered surfaces, warm accents and considered movement. */
+.premium-storefront { background: #fff; }
+.premium-storefront .hero { background: radial-gradient(ellipse at 85% 20%, #1a4c70 0, transparent 48%), linear-gradient(125deg, #071629, #102e4c); overflow: hidden; }
+.premium-storefront .hero::after { content: ""; position: absolute; width: 420px; height: 420px; border: 1px solid #ffffff0d; border-radius: 50%; right: -180px; top: -180px; box-shadow: 0 0 0 65px #ffffff03, 0 0 0 130px #ffffff02; pointer-events: none; }
+.premium-storefront .hero h1 > span { background: linear-gradient(100deg, #ffba67, #ff8c24); background-clip: text; color: transparent; }
+.premium-storefront .hero-copy { animation: home-enter .8s ease-out both; }
+.premium-storefront .premium-showcase { position: relative; z-index: 1; animation: home-enter 1s ease-out both; }
+.premium-storefront .showcase-main { background: radial-gradient(ellipse at 50% 36%, #fff 0, #edf2f7 75%); border-radius: 24px; border-color: #ffffff80; box-shadow: 0 30px 70px #00000040, inset 0 1px #fff; transition: box-shadow .4s, border-color .4s; }
+.premium-storefront .showcase-main > img { animation: home-float 6s ease-in-out infinite; filter: drop-shadow(0 18px 10px #0b1f3a18); }
+.premium-storefront .showcase-caption h2 { min-height: 3.8em; }
+.premium-storefront .showcase-main:is(:hover, :focus-visible) { border-color: #ffb057; box-shadow: 0 32px 75px #00000050, 0 0 0 4px #ffac3312; }
+.premium-storefront .showcase-main:is(:hover, :focus-visible) > img { animation-play-state: paused; }
+.premium-storefront .showcase-arrow { background: #102c48; transition: background .3s, rotate .3s; }
+.premium-storefront .showcase-main:hover .showcase-arrow { background: #d86d08; rotate: 8deg; }
+.premium-storefront .showcase-minis > a { backdrop-filter: blur(12px); transition: background .3s, border-color .3s, transform .3s; }
+.premium-storefront .showcase-minis > a:is(:hover, :focus-visible) { background: #ffffff18; border-color: #ffb05780; transform: translateY(-4px); }
+.premium-storefront .category-card { border-radius: 18px; transition: transform .35s, box-shadow .35s, border-color .35s; }
+.premium-storefront .category-card:is(:hover, :focus-visible) { transform: translateY(-7px); box-shadow: 0 18px 35px #15395a12; border-color: #cba877; }
+.premium-storefront .category-art { background: linear-gradient(140deg, #f5f7fa, #edf1f6); overflow: hidden; }
+.premium-storefront .category-source-image { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.premium-storefront .category-card:is(:hover, :focus-visible) img { transform: scale(1.09) rotate(-3deg); }
+.premium-storefront .round-arrow { transition: background .3s, color .3s; }
+.premium-storefront .category-card:hover .round-arrow { background: #102c48; color: white; }
+.premium-storefront .catalog-section { background: radial-gradient(ellipse at 0 0, #e9eff7, transparent 60%), #f5f7fa; border-block: 1px solid #e5ebf2; }
+.premium-storefront .bestseller-section { background: linear-gradient(130deg, #faf6ee, #f8fafc); }
+.premium-storefront .bestseller-section .eyebrow { color: #9b5b18; }
+.premium-storefront .recommendations-section { background: radial-gradient(ellipse at top right, #dfebf870, transparent 65%), #f5f8fc; }
+.carousel-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 12px; }
+.recommendation-caption { color: #64758a; font-size: 12px; line-height: 1.8; max-width: 650px; margin: -12px 0 24px; }
+.carousel-toolbar > span { display: flex; align-items: center; gap: 9px; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; color: #234564; }
+.carousel-toolbar small { margin-left: 12px; color: #64758a; font-size: 11px; font-weight: 400; letter-spacing: 0; }
+.collection-indicator { width: 7px; height: 7px; border-radius: 50%; background: #e78a23; box-shadow: 0 0 0 4px #e78a2314; }
+.carousel-controls { display: flex; gap: 8px; }
+.carousel-controls button { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; border: 1px solid #d9e2ec; background: white; color: #173954; cursor: pointer; transition: background .2s, color .2s, transform .2s; }
+.carousel-controls button:hover { background: #102c48; color: white; transform: translateY(-2px); }
+.home-product-rail { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 60px) / 4); gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 4px; padding: 14px 4px 28px; scrollbar-width: thin; scrollbar-color: #a8bbce #e3eaf2; }
+.home-product-rail > a { scroll-snap-align: start; min-width: 0; }
+.premium-storefront .home-product-rail .source-product-card { background: white; border: 1px solid #e1e7ef; border-radius: 19px; padding: 15px; transition: transform .35s, box-shadow .35s, border-color .35s; }
+.premium-storefront .home-product-rail .source-product-card:is(:hover, :focus-visible) { transform: translateY(-7px); box-shadow: 0 16px 28px #12304b16; border-color: #cbab7e; }
+.premium-storefront .home-product-rail .source-product-image { height: auto; aspect-ratio: 1 / 1; border-radius: 12px; overflow: hidden; background: radial-gradient(ellipse at center, #fff, #f0f3f7); }
+.premium-storefront .home-product-rail .source-product-image img { width: 100%; height: 100%; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.premium-storefront .home-product-rail .source-product-card:is(:hover, :focus-visible) img { transform: scale(1.08) rotate(-2deg); }
+.premium-storefront .home-product-rail .source-product-card h3 { font-size: 14px; }
+.premium-storefront .home-product-rail .source-product-card p { margin-top: auto; padding-top: 18px; }
+.premium-storefront .home-product-rail .source-sku { margin-bottom: 22px; }
+.premium-storefront .home-product-rail .source-product-card p > svg { transition: background .3s, color .3s; }
+.premium-storefront .home-product-rail .source-product-card:hover p > svg { background: #102c48; color: white; }
+.carousel-footnote { display: flex; justify-content: space-between; gap: 16px; margin-top: 16px; color: #6a7d91; font-size: 10px; }
+.carousel-footnote > span:last-child { display: flex; align-items: center; gap: 8px; }
+.premium-storefront .why-grid article { background: linear-gradient(145deg, white, #f7f9fc); transition: box-shadow .3s, transform .3s; }
+.premium-storefront .why-grid article:hover { transform: translateY(-4px); box-shadow: 0 12px 30px #15395a0c; }
+.premium-storefront .wholesale { background: radial-gradient(ellipse at 80% 100%, #23547d, transparent 60%), #0a213a; }
+.premium-storefront .contact-cta { background: linear-gradient(120deg, #edf3fa, #faf7f0); }
+.premium-storefront .button { transition: background .25s, box-shadow .25s, transform .25s; }
+.premium-storefront .button:hover { box-shadow: 0 8px 22px #0b1f3a20; }
+@keyframes home-float { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-10px) rotate(1deg); } }
+@keyframes home-enter { from { opacity: .5; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 1050px) { .home-product-rail { grid-auto-columns: calc((100% - 40px) / 3); } }
+@media (max-width: 760px) {
+  .home-product-rail { grid-auto-columns: 76%; gap: 20px; }
+  .carousel-toolbar small { display: none; }
+  .carousel-toolbar > span { font-size: 8px; letter-spacing: 1px; }
+  .carousel-controls { gap: 5px; }
+  .carousel-controls button { width: 38px; height: 38px; }
+  .premium-storefront .home-product-rail .source-product-card h3 { font-size: 13px; }
+  .premium-storefront .home-product-rail .source-product-card > small { font-size: 9px; }
+  .premium-storefront .home-product-rail .source-product-card p { font-size: 16px; }
+  .premium-storefront .home-product-rail .source-product-link { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .premium-storefront *, .premium-storefront *::before, .premium-storefront *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .premium-storefront .category-card:is(:hover, :focus-visible), .premium-storefront .home-product-rail .source-product-card:is(:hover, :focus-visible), .premium-storefront .showcase-minis > a:is(:hover, :focus-visible), .premium-storefront .why-grid article:hover, .premium-storefront .button:hover, .carousel-controls button:hover { transform: none; }
+  .premium-storefront .category-card:is(:hover, :focus-visible) img, .premium-storefront .home-product-rail .source-product-card:is(:hover, :focus-visible) img { transform: none; }
+}

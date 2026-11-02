@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Fan Box",
+    "slug": "fan-box",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/F8_3_18-40.png?v=1757426631",
+    "count": 3
+  },
+  {
+    "name": "Concealed Box",
+    "slug": "concealed-box",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/CC_PL_4.5_24-60.png?v=1757426598",
+    "count": 4
+  },
+  {
+    "name": "Modular Box",
+    "slug": "modular-box",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/3x3_2a9180ab-d4c3-44f8-a771-bb558ea8a40e.png?v=1757426645",
+    "count": 6
+  },
+  {
+    "name": "MCB Distribution Box",
+    "slug": "mcb-distribution-box",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/MCB_Box_4_Way_Draw_TPN.png?v=1757426454",
+    "count": 7
+  },
+  {
+    "name": "Bus Bar Distribution Box",
+    "slug": "bus-bar-distribution-box",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/DD-Copy_2.png?v=1772449717",
+    "count": 7
+  },
+  {
+    "name": "Change Over Switch",
+    "slug": "off-load-change-over-switch",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/collections/CO400AKNIFETYPE.png?v=1774339606",
+    "count": 8
+  },
+  {
+    "name": "Accessories",
+    "slug": "accessories",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/Connector.png?v=1774344618",
+    "count": 11
+  },
+  {
+    "name": "Appliances",
+    "slug": "appliances",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/HeatBlowerM2_04f122c9-0cc4-4df8-a422-cd731205da85.png?v=1772694634",
+    "count": 14
+  },
+  {
+    "name": "Automatic Changeover",
+    "slug": "automatic-changeover",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/ACO_100A_Phase_Selector.png?v=1757426707",
+    "count": 6
+  },
+  {
+    "name": "CFL Downlighters",
+    "slug": "cfl-downlighters",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/CL-S11.png?v=1756461333",
+    "count": 1
+  },
+  {
+    "name": "CFL Pole Light",
+    "slug": "cfl-pole-light",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/CFLSTLightOval.png?v=1757426553",
+    "count": 1
+  },
+  {
+    "name": "Domestic Water Pump Starter",
+    "slug": "domestic-water-pump-starter",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/ABS-Pump-Starter.png?v=1741846666",
+    "count": 1
+  },
+  {
+    "name": "Door Bell",
+    "slug": "door-bell",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/Door_Bell_Tring_Trong.png?v=1757426728",
+    "count": 1
+  },
+  {
+    "name": "Enshield Block Set",
+    "slug": "endshield-block-set",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/Enshield-32A-1.png?v=1757426474",
+    "count": 1
+  },
+  {
+    "name": "Fan Downrod",
+    "slug": "fan-downrod",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/FanRod.png?v=1757426665",
+    "count": 2
+  },
+  {
+    "name": "Junction Box",
+    "slug": "junction-box",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/Junction_Box_CNG.png?v=1757426491",
+    "count": 2
+  },
+  {
+    "name": "Kitkat Fuses",
+    "slug": "domestic-kitkat-fuses",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/collections/KIT-KAT-500A-Handle-T.png?v=1774328523",
+    "count": 10
+  },
+  {
+    "name": "LED",
+    "slug": "led",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/SolarLEDPoleLight50w.png?v=1757426727",
+    "count": 12
+  },
+  {
+    "name": "LED Downlighters",
+    "slug": "led-downlighters",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/LED-Combo-7w_0ea241ea-e597-4f4a-a3b2-dd72373eb0a6.png?v=1756461332",
+    "count": 1
+  },
+  {
+    "name": "LED Flood Lights",
+    "slug": "led-flood-lights",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/FloodLightLense.png?v=1757426472",
+    "count": 2
+  },
+  {
+    "name": "Main Switch Rewirable",
+    "slug": "main-switch-rewirable",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/MS60ADP.png?v=1757426668",
+    "count": 5
+  },
+  {
+    "name": "Outdoor Lights",
+    "slug": "outdoor-lights",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/SolarLEDPoleLight50w.png?v=1757426727",
+    "count": 7
+  },
+  {
+    "name": "Plastic Round  Sheets",
+    "slug": "plastic-round-sheets",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/RoundSHeet_0b637b31-05fd-4882-934c-41d97295eed7.png?v=1757426709",
+    "count": 2
+  },
+  {
+    "name": "PVC Casing Batten",
+    "slug": "pvc-casing-batten",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/PVC_Batten.png?v=1773475766",
+    "count": 1
+  },
+  {
+    "name": "PVC PIPE",
+    "slug": "pvc-pipe",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/PVC_Batten.png?v=1773475766",
+    "count": 3
+  },
+  {
+    "name": "Reversing Switch",
+    "slug": "reversing-switch",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/Reversing_Switch_16A.png?v=1757426539",
+    "count": 1
+  },
+  {
+    "name": "Room Heater",
+    "slug": "room-heater",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/SUNWARMER.png?v=1757426741",
+    "count": 6
+  },
+  {
+    "name": "Ventoguard",
+    "slug": "ventoguard",
+    "image": "https://cdn.shopify.com/s/files/1/0651/4583/1466/files/Ventoguard-New.png?v=1756461358",
+    "count": 1
+  }
+]
